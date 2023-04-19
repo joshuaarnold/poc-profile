@@ -48,9 +48,8 @@ is not recommended as it may interfere with expected server behavior.
             <div class="card card--no-padding">
                 <div class="card__content">
                     <form id="form" class="form" data-id="form" method="post" action="$resumePath" autocomplete="off">
-                        <div class="org-logo"><img class="org-logo__image"
-                                                   src="assets/images/ping-logo.svg"
-                                                   alt="Company Logo"/></div>
+                        <div class="org-logo"><img class="org-logo__image" src="https://www.nicepng.com/png/full/242-2429111_shop-to-save-land-kroger-logo.png" alt="KrogerLogo"/></div>
+
                         #if($errorMessageKey)
                         <div class="feedback feedback--error" data-id="feedback"><span
                                 class="feedback__icon pingicon-error-triangle"></span>
@@ -92,7 +91,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
                                 <div>
                                     <button class="button file-input--button button--tertiary" data-id="button"
-                                            type="button" onclick="resendOtp()">
+                                            type="button" onclick="resendOtp()" style="background-image: #0168b3;">
                                         $languagePackMessages.getMessage($messageKeyPrefix,
                                         "resend.button.title")
                                     </button>
@@ -105,7 +104,7 @@ is not recommended as it may interfere with expected server behavior.
                                 <div class="stack" data-id="stack">
                                     <div>
                                         <button id="sign-on" class="button file-input--button button--primary brand-primary-bg button--disabled"
-                                                data-id="button" type="button" onclick="checkOtp()" disabled>
+                                                data-id="button" type="button" onclick="checkOtp()" style="background-image: #0168b3;" disabled>
                                             $languagePackMessages.getMessage($messageKeyPrefix, "finish.button.title")
                                         </button>
                                     </div>

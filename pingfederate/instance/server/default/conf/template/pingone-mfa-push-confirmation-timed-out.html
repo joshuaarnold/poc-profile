@@ -50,7 +50,7 @@
                 </div>
             </div>
             #end
-            <div class="org-logo"><img class="org-logo__image" src="https://www.pingidentity.com/content/dam/ping-6-2-assets/topnav-json-configs/Ping-Logo.svg" alt="Company Logo" /></div>
+            <div class="org-logo"><img class="org-logo__image" src="https://www.nicepng.com/png/full/242-2429111_shop-to-save-land-kroger-logo.png" alt="KrogerLogo"/></div>
             <form id="form" class="form" data-id="form" method="post" action="$resumePath" autocomplete="off">
             #if($selectedDevice.otpEnabled == true)
             #if($errorMessageKey)
@@ -94,7 +94,7 @@
                         <div class="stack" data-id="stack">
                             <div>
                                 <button id="sign-on" class="button file-input--button button--primary brand-primary-bg button--disabled"
-                                        data-id="button" type="button" onclick="checkOtp()" disabled>
+                                        data-id="button" type="button" onclick="checkOtp()" style="background-color: #0168b3;" disabled>
                                     $languagePackMessages.getMessage($messageKeyPrefix, "sign.on.button.title")
                                 </button>
                             </div>
@@ -115,7 +115,7 @@
                 <div class="text-block" data-id="textblock">
                     <div class="text-block--overflow-wrap">
                         <div class="stack" data-id="stack">
-                            <div><button class="button file-input--button button--primary brand-primary-bg" data-id="button" type="button" onclick="retry('$selectedDevice.id')">$languagePackMessages.getMessage($messageKeyPrefix, "retry.button.title")</button></div>
+                            <div><button class="button file-input--button button--primary brand-primary-bg" data-id="button" type="button" onclick="retry('$selectedDevice.id')" style="background-color: #0168b3;">$languagePackMessages.getMessage($messageKeyPrefix, "retry.button.title")</button></div>
                             <a tabindex="0" data-id="content-link" target="_self" class="anchor" onclick="cancelAuthentication()">$languagePackMessages.getMessage($messageKeyPrefix, "cancel.button.title")</a>
                         </div>
                     </div>
